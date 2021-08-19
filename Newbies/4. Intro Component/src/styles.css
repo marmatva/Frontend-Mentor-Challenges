@@ -1,0 +1,161 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%); 
+    --grayishBlue: hsl(246, 25%, 77%);
+    --darkGrayishBlue: hsl(246, 10%, 50%);
+
+    --white: #fff;
+
+    --font: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--font);
+}
+
+h1{
+    font-size: 3.2rem;
+    color: var(--white);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--white);
+    margin: 0;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    background-image: url(images/bg-intro-mobile.png);
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+@media (min-width: 970px) {
+    html{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+}
+
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(247, 18, 18, 0.5);
+    
+}
+
+.main-container{
+    width: 85%;
+}
+
+.main-text{
+    text-align: center;
+    margin: 4rem;
+}
+
+@media (min-width: 970px) {
+    .main-container{
+        width: 80%;
+        flex-direction: row;
+    }
+    .main-container>div{
+        flex: 1 1 50%;
+        margin: 0 2rem;
+        text-align: start;
+    }
+}
+
+.card{
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 7px 0px 0px rgba(48, 48, 48, 0.25);
+}
+
+.card-1{
+    background-color: var(--blue);
+}
+
+.card-2{
+    background-color: var(--white);
+}
+
+.card-2 p{
+    color: var(--grayishBlue);
+    font-size: 1.2rem;
+}
+
+.card-2 span{
+    color: var(--red);
+    font-weight: 500;
+}
+
+.card-2 input{
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--grayishBlue);
+    border-radius: .5rem;
+}
+
+.card-2 input::placeholder{
+    color: var(--darkGrayishBlue);
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-2 input[type="submit"]{
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 0px 0px rgba(48, 186, 126, 1);
+    transition: background-color .3s, box-shadow .3s, transform .3s;
+}
+
+.card-2 input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(119, 226, 180);
+    box-shadow: 0px 4px 0px 0px rgba(106, 206, 161, 1);
+}
+
+/* .card-2 input:not(:placeholder-shown):invalid{
+    border-color: var(--red);
+} */
+
