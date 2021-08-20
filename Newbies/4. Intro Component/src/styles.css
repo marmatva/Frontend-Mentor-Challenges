@@ -121,11 +121,22 @@ html{
     font-weight: 500;
 }
 
+.input-div{
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--grayishBlue);
+    border-radius: .5rem;
+}
+
+.container-input{
+    width: 100%;
+    margin-bottom: 2rem;  
+}
+
 .card-2 input{
+    border: none;
     width: 100%;
     padding: 1.5rem;
-    margin-bottom: 2rem;
-    border: 1px solid var(--grayishBlue);
     border-radius: .5rem;
 }
 
@@ -137,6 +148,7 @@ html{
 }
 
 .card-2 input[type="submit"]{
+    margin-bottom: 2rem;
     border: none;
     background-color: var(--green);
     color: var(--white);
@@ -155,7 +167,17 @@ html{
     box-shadow: 0px 4px 0px 0px rgba(106, 206, 161, 1);
 }
 
-/* .card-2 input:not(:placeholder-shown):invalid{
+.invalid{
     border-color: var(--red);
-} */
+}
+
+p.warning{
+    padding: 0.2rem;
+    color: var(--red);
+}
+
+.icon{
+    object-fit: contain; 
+    margin: .2rem
+}
 
