@@ -59,6 +59,7 @@ main{
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 6px 11px rgba(72,85,106,0.23), 0 4px 4px rgba(72,85,106,0.20);
+    position: relative;
 }
 
 p, time{
@@ -95,6 +96,7 @@ h2, h4{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
+    
 }
 
 .article-info>img{
@@ -103,17 +105,64 @@ h2, h4{
     margin-right: 1.5rem;
 }
 
-.article-info div{
+.article-info>div{
     flex-grow: 1;
 }
 
-.article-info button{
+.share-button{
     border: none;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
     background-color: var(--lightGrayishBlue);
 }
+
+.share-button:hover{
+    cursor: pointer;
+}
+
+.share-social-media{
+    background-color: var(--darkGrayishBlue);
+    position: absolute;
+    height: 6rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 10%;
+
+    display: flex; 
+    align-items: center;
+}
+
+.share-social-media p{
+    display: inline;
+    color: var(--grayishBlue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+.main-links{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-links>img:hover{
+    cursor: pointer;
+}
+
+
+.display-none{
+    display: none;
+}
+
+.higher-zindex{
+    z-index: 2;
+}
+
 
 @media (min-width: 1025px) {
     main{
