@@ -1,0 +1,122 @@
+:root{
+    --font:'Manrope', sans-serif;
+
+    --darkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 90%);
+
+    --white: #FFF;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 5%;
+    background-color: var(--lightGrayishBlue);
+    font-family: var(--font);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 450px) {
+    main{
+        width: 70%;
+    }
+}
+
+@media (min-width: 780px) {
+    main{
+        width: 40%;
+    }
+}
+
+.component{
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 11px rgba(72,85,106,0.23), 0 4px 4px rgba(72,85,106,0.20);
+}
+
+p, time{
+    color: var(--desaturatedDarkBlue);
+    font-weight: 500;
+}
+
+.component p{
+    font-size: 1.3rem;
+}
+
+h2, h4{
+    color: var(--darkGrayishBlue);
+}
+
+.component h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.image img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.content, .article-info{
+    margin: 0 10%;
+    text-align: start;
+}
+
+.content{
+    margin-bottom: 2rem;
+}
+
+.article-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.article-info>img{
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.article-info div{
+    flex-grow: 1;
+}
+
+.article-info button{
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lightGrayishBlue);
+}
+
+
+
