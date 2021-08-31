@@ -82,6 +82,25 @@ h2{
     margin:0;
 }
 
+.section-group{
+    display: contents;
+}
+
+@media (min-width: 1280px) {
+    .section-group{
+        display: block;
+    }
+
+    .section-group section:first-of-type{ 
+        margin-bottom: 2.5rem;
+    }
+
+    section:first-of-type, section:last-of-type{
+        align-self: center;
+    }
+
+}
+
 section{
     height: 20rem;
     width: 32rem;
@@ -127,6 +146,7 @@ img.icon{
 .section-calculator .color-line{
     background-color: var(--blue);
 }
+
 
 footer a{
     text-decoration: none;
