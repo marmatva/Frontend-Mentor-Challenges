@@ -1,0 +1,86 @@
+:root{
+    --darkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+
+    /*Gradient*/
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+
+    /*Neutral*/
+
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+
+    /*Dividers*/
+
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+
+    --white: #FFF;
+
+    --font: 'Kumbh Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--softViolet), var(--softBlue));
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 10%;
+    font-family: var(--font);
+}
+
+main{
+    background-color: var(--white);
+    padding: 0 3rem;
+    margin-top: 7rem;
+    padding-top: 10rem;
+    position: relative;
+}
+
+.main-illustration{
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    left: 0;
+    top: -10.7rem;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-illustration-shadow{
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    left: 0;
+    top: -8.35rem;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    opacity: 0.1;
+}
+
+.question-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
